@@ -14,3 +14,6 @@ func main() {
 // namun untuk tahap pembelajaran, atau development 
 // setiap file program berkekstensi .go dapat lansung diekseskusi. 
 // Pada direktory terminal perintah yang dijalankan adalah `go run <nama-file.go>`
+
+// contohnya untuk menjalankan program pada file ini,
+// pada terminal saya harus menetikkan `go run 01-helloworld.go`
