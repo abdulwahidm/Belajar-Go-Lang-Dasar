@@ -11,6 +11,5 @@ func main() {
 
 	var ktpSaya = "134782478470"
 	fmt.Println(ktpSaya)
-	fmt.Println(NoKTP("123467894345"))
-	
+	fmt.Println(NoKTP("123467894345"))	
 }
