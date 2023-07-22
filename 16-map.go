@@ -12,10 +12,15 @@ func main() {
 		"name" : "Abdul",
 		"address" : "Bekasi",
 	}
+	person["title"] = "programmer" // menambahkan data baru
 
 	fmt.Println(person)
 	fmt.Println(person["name"])
 	fmt.Println(person["address"])
+
+	fmt.Println(len(person)) // fungsi len mengembalikan jumlah data pada map
+	delete(person, "address") // menghapus sebuah data  pada map
+	fmt.Println("jumlah data map setlah dihapus:", len(person))
 
 
 }
