@@ -22,5 +22,11 @@ func main() {
 	delete(person, "address") // menghapus sebuah data  pada map
 	fmt.Println("jumlah data map setlah dihapus:", len(person))
 
-
+	// Cara lain dalam membuat map
+	var book map[string]string = make(map[string]string)
+	book["title"] = "Belajar Go-Lang"
+	book["author"] = "Eko"
+	book["ups"] = "Salah"
+	fmt.Println(book)
+	fmt.Println(len(book))
 }
