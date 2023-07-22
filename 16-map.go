@@ -6,7 +6,8 @@ func main() {
 // 	Pada Array atau Slice, untuk mengakses data, kita menggunakan index Number dimulai dari 0
 // Map adalah tipe data lain yang berisikan kumpulan data yang sama, namun kita bisa menentukan jenis tipe data index yang akan kita gunakan
 // Cara menggunakan map cukup dengan menuliskan keyword map diikuti tipe data key dan value-nya.
-// Berbeda dengan Array dan Slice, jumlah data yang kita masukkan ke dalam Map boleh sebanyak-banyaknya, asalkan kata kunci nya berbeda, jika kita gunakan kata kunci sama, maka secara otomatis data sebelumnya akan diganti dengan data baru.
+// Berbeda dengan Array dan Slice, jumlah data yang kita masukkan ke dalam Map boleh sebanyak-banyaknya, asalkan kata kunci nya berbeda, 
+//jika kita gunakan kata kunci sama, maka secara otomatis data sebelumnya akan diganti dengan data baru.
 
 	person := map[string]string{
 		"name" : "Abdul",
