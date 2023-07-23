@@ -19,4 +19,4 @@ func calculate(d float64) (float64, float64) {
 	var circumference = math.Pi * d
 	// kembalikan 2 nilai
 	return area, circumference
-	}
+}
