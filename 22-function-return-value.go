@@ -31,3 +31,18 @@ func randomWithRange(min, max int) int {
 	var value = randomizer.Int()%(max-min+1) + min
 	return value
 }
+
+/*
+Selain sebagai penanda nilai balik, keyword return juga bisa dimanfaatkan
+untuk menghentikan proses dalam blok fungsi di mana ia dipakai. Contohnya bisa
+dilihat pada kode berikut.
+*/
+
+func divideNumber(m, n int) {
+	if n == 0 {
+		fmt.Printf("invalid divider. %d cannot divided by %d\n", m, n)
+		return
+	}
+	var res = m / n
+		fmt.Printf("%d / %d = %d\n", m, n, res)
+	}
