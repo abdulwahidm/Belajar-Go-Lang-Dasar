@@ -11,17 +11,17 @@ Saat panic function dipanggil, program akan terhenti, namun defer function tetap
 */
 
 func endApp(){
-	// message := recover()
-	// if message != nil {
-	// 	fmt.Println("Error dengan message:", message)
-	// }
+	message := recover()
+	if message != nil {
+		fmt.Println("Error dengan message:", message)
+	}
 	fmt.Println("Aplikasi selesai")
 }
 
 func runApp(error bool){
-	defer endApp()
+	defer endApp() // recover() disisipkan pada fungsi defer
 	if error {
-		panic("APLIKASI ERROR")
+		panic("APLIKASI ERROR") // jika panic terpanggil maka alur program akan berhenti
 	}
 	fmt.Println("Aplikasi berjalan")
 }
