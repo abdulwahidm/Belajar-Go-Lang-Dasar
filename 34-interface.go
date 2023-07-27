@@ -37,8 +37,8 @@ func main() {
 	var bangunDatar Hitung
 
 	bangunDatar = Lingkaran{14.0}
-	fmt.Println("===== Lingkaran =====")
-	fmt.Println("jari-jari	:", bangunDatar.(Lingkaran).jariJari())
+	fmt.Println("=============== Lingkaran =================")
+	fmt.Println("Jari-jari	:", bangunDatar.(Lingkaran).jariJari())
 	fmt.Println("Luas		:", bangunDatar.Luas())
 	fmt.Println("Keliling	:", bangunDatar.Keliling())
 
