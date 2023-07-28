@@ -11,8 +11,13 @@ import (
 // (Package akan kita bahas secara detail di materi tersendiri)
 
 func main() {
-	hasil, _ := Pembagi(100, 25)
-	fmt.Println("Hasil:", hasil)
+	hasil, err := Pembagi(100, 0)
+	if err == nil {
+		fmt.Println("Hasil:", hasil)
+	} else {
+		fmt.Println(err.Error())
+	}
+	
 }
 
 func Pembagi(nilai int, pembagi int) (int, error) {
